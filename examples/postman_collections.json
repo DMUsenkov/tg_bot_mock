@@ -1,0 +1,520 @@
+{
+	"info": {
+		"_postman_id": "f33cce8d-9a3e-4f6e-8e52-2e1e4743bf5d",
+		"name": "Sports Platform Mock API",
+		"description": "Коллекция запросов для тестирования микросервиса с захардкоженными данными спортивной платформы",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Пользователи",
+			"item": [
+				{
+					"name": "Получить пользователя по номеру телефона",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/users/by-phone/79001234567",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"by-phone",
+								"79001234567"
+							]
+						},
+						"description": "Получение информации о пользователе по номеру телефона (Иван Иванов)"
+					},
+					"response": []
+				},
+				{
+					"name": "Получить пользователя по номеру телефона (Петр Петров)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/users/by-phone/79002345678",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"by-phone",
+								"79002345678"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получить пользователя по номеру телефона (Алексей Сидоров)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/users/by-phone/79003456789",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"by-phone",
+								"79003456789"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Команды",
+			"item": [
+				{
+					"name": "Получить команды пользователя 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/users/1/teams",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"1",
+								"teams"
+							]
+						},
+						"description": "Получение команд пользователя 1 (Иван Иванов)"
+					},
+					"response": []
+				},
+				{
+					"name": "Получить команды пользователя 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/users/2/teams",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"2",
+								"teams"
+							]
+						},
+						"description": "Получение команд пользователя 2 (Петр Петров)"
+					},
+					"response": []
+				},
+				{
+					"name": "Получить команды пользователя 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/users/3/teams",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"3",
+								"teams"
+							]
+						},
+						"description": "Получение команд пользователя 3 (Алексей Сидоров)"
+					},
+					"response": []
+				},
+				{
+					"name": "Получить информацию о команде",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/teams/101",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"teams",
+								"101"
+							]
+						},
+						"description": "Получение детальной информации о команде с ID 101"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Чемпионаты",
+			"item": [
+				{
+					"name": "Получить чемпионаты пользователя 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/users/1/championships",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"1",
+								"championships"
+							]
+						},
+						"description": "Получение чемпионатов пользователя 1 (Иван Иванов)"
+					},
+					"response": []
+				},
+				{
+					"name": "Получить чемпионаты пользователя 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/users/2/championships",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"2",
+								"championships"
+							]
+						},
+						"description": "Получение чемпионатов пользователя 2 (Петр Петров)"
+					},
+					"response": []
+				},
+				{
+					"name": "Получить информацию о чемпионате",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/championships/201",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"championships",
+								"201"
+							]
+						},
+						"description": "Получение детальной информации о чемпионате с ID 201"
+					},
+					"response": []
+				},
+				{
+					"name": "Получить рекомендуемые чемпионаты",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/championships/recommended/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"championships",
+								"recommended",
+								"1"
+							]
+						},
+						"description": "Получение рекомендуемых чемпионатов для пользователя 1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Матчи",
+			"item": [
+				{
+					"name": "Получить предстоящие матчи пользователя",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/users/1/matches?status=upcoming",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"1",
+								"matches"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "upcoming"
+								}
+							]
+						},
+						"description": "Получение предстоящих матчей пользователя 1"
+					},
+					"response": []
+				},
+				{
+					"name": "Получить прошедшие матчи пользователя",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/users/1/matches?status=past",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"1",
+								"matches"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "past"
+								}
+							]
+						},
+						"description": "Получение прошедших матчей пользователя 1"
+					},
+					"response": []
+				},
+				{
+					"name": "Получить все предстоящие матчи",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/matches/upcoming",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"matches",
+								"upcoming"
+							]
+						},
+						"description": "Получение всех предстоящих матчей на платформе"
+					},
+					"response": []
+				},
+				{
+					"name": "Отклонить участие в матче",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"team_id\": 101,\n    \"reason\": \"Не можем участвовать по уважительной причине\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/matches/301/decline",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"matches",
+								"301",
+								"decline"
+							]
+						},
+						"description": "Отклонение участия в матче с ID 301"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Приглашения",
+			"item": [
+				{
+					"name": "Получить все приглашения пользователя",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/users/1/invitations",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"1",
+								"invitations"
+							]
+						},
+						"description": "Получение всех приглашений пользователя 1"
+					},
+					"response": []
+				},
+				{
+					"name": "Получить приглашения в команду",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/users/1/invitations?type=team",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"1",
+								"invitations"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "team"
+								}
+							]
+						},
+						"description": "Получение приглашений в команду для пользователя 1"
+					},
+					"response": []
+				},
+				{
+					"name": "Принять приглашение в команду",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/invitations/team/401/accept",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"invitations",
+								"team",
+								"401",
+								"accept"
+							]
+						},
+						"description": "Принятие приглашения в команду с ID 401"
+					},
+					"response": []
+				},
+				{
+					"name": "Отклонить приглашение в команду",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/invitations/team/401/decline",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"invitations",
+								"team",
+								"401",
+								"decline"
+							]
+						},
+						"description": "Отклонение приглашения в команду с ID 401"
+					},
+					"response": []
+				},
+				{
+					"name": "Принять приглашение в оргкомитет",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/invitations/committee/402/accept",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"invitations",
+								"committee",
+								"402",
+								"accept"
+							]
+						},
+						"description": "Принятие приглашения в оргкомитет с ID 402"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Уведомления",
+			"item": [
+				{
+					"name": "Подтвердить доставку уведомления",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"notification_id\": 501,\n    \"delivered\": true,\n    \"delivered_at\": \"2025-05-12T15:30:45\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/notifications/confirm-delivery",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"notifications",
+								"confirm-delivery"
+							]
+						},
+						"description": "Подтверждение доставки уведомления с ID 501"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080/api",
+			"type": "string"
+		}
+	]
+}

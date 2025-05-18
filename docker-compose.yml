@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  mock-api:
+    build:
+      context: .
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+    volumes:
+      - ./app.py:/app/app.py
